@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.AgeController">
+   <children>
+      <VBox prefHeight="527.0" prefWidth="392.0">
+         <children>
+            <HBox prefHeight="81.0" prefWidth="392.0">
+               <children>
+                  <TextField text="Enter Your Date of Birth">
+                     <HBox.margin>
+                        <Insets left="25.0" top="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="picker">
+                     <HBox.margin>
+                        <Insets left="25.0" top="30.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="84.0" prefWidth="392.0">
+               <children>
+                  <TextField text="Till Date">
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="two">
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="88.0" prefWidth="392.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#calculatingage" prefHeight="50.0" prefWidth="100.0" text="Calculate">
+                     <HBox.margin>
+                        <Insets left="140.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="59.0" prefWidth="392.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="100.0" text="Age">
+                     <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="three" prefHeight="30.0">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="392.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="100.0" text="Years">
+                     <HBox.margin>
+                        <Insets left="60.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="four" prefHeight="30.0">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="142.0" prefWidth="392.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="100.0" text="Months">
+                     <HBox.margin>
+                        <Insets left="60.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="five" prefHeight="30.0">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutY="407.0" prefHeight="120.0" prefWidth="392.0">
+         <children>
+            <TextField prefHeight="30.0" prefWidth="100.0" text="Weeks">
+               <HBox.margin>
+                  <Insets left="60.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="six" prefHeight="30.0">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
